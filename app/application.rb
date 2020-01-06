@@ -22,6 +22,12 @@ class Application
           resp.write "#{item}\n"
         end
       end
+    elsif req.path.match(/add/)
+      next_item = req.params["item"]
+      
+      
+      
+      
     else
       resp.write "Path Not Found"
     end
